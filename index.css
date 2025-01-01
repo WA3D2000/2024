@@ -193,13 +193,12 @@ span {
 /* cards style ends */
 .grid-album {
     display: grid;
-    grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 100px 300px 300px;
-    grid-template-areas: ".        heading     .  "
-        " item-1  item-2   item-3 "
-        " item-4  item-5   item-6 ";
+    grid-template-columns: 300px 300px 300px;
+    grid-template-areas: "  .        heading     .  "
+                         " item-1  item-2   item-3 "
+                          " item-4  item-5   item-6 ";
     row-gap: 10px;
-    column-gap: 20px;
+    column-gap: 10px;
     justify-content: center;
 }
 .heading {
@@ -226,8 +225,8 @@ span {
     grid-area: item-6;
 }
 .grid-album img {
-    width: 390px;
-    height: 290px;
+    width: 300px;
+    height: 250px;
 }
 /* grid album ends  */
 .options {
@@ -376,34 +375,64 @@ footer .form button:hover {
 }
 /* templett ends */
 
+
 /* responsive*/
 @media (max-width:600px) {
     
          nav{
+            width: 80%;
             display: block;
          }
         .hero-text {
-            width:100%;
+            width:70%;
             top: 10%;
             font-size: 30px;
         }
+        .cards {
+            height: auto;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+        .card{
+            width: 70%;
+        }
         .grid-album{
-            grid-template-columns: 100px 100px 100px;
-            row-gap: 5px;
+            width: 80%;
+            grid-template-columns: 260px 260px;
+            grid-template-areas: "  heading     .  "
+            " item-1  item-2   "
+            "item-4  item-3 "
+             "  item-5   item-6 ";
+            align-items: center;
+            column-gap: 5px;
         }
         .grid-album img{
-            width:150px;
+            width:100%;
             height:200px;
         }
+        .options{
+            width: 80%;
+            height: auto;
+            flex-direction: column;
+        }
         .offers{
-            grid-template-columns: 100px 100px 100px;
-            grid-template-rows: 100px 400px 100px;
-             
+            width: 70%;
+            height: auto;
+            grid-template-columns: 400px;
+            grid-template-rows: 100px 600px 600px 
+            600px 100px ;
+            grid-template-areas: "hed "
+                                 " family "
+                                 "friends"  
+                                 "friday"
+                                 " foot ";
         }
         .offers img{
-            width:150px;
+            width:100%;
         }
         footer {
+            width: 80%;
             height: 60vh;
             display: flex;
             flex-direction: column;
