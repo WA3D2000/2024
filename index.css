@@ -553,4 +553,30 @@ iframe{
         margin-right:0;    
          
       }
+      /*contact responsive*/
+      form{
+        width:350px;
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+        box-shadow:none;
+        margin: 20px 10px 50px 10px ;
+      }
+      form .submition img{
+        height: 400px;
+        width: 350px;
+        margin: 0;  
+        padding: 20px;
+    }
+      .site{
+        height: 60vh;
+        width: 350px;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    #order {
+        padding: 10px 5px;
+        border-radius: 20%;
+    }
 }
